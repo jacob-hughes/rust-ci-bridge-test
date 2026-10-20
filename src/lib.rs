@@ -6,8 +6,6 @@ pub fn sub(left: u64, right: u64) -> u64 {
     return left - right;
 }
 
-pub fn is_empty(v: &[u64]) -> bool { v.len() == 0 }
-
 #[cfg(test)]
 mod tests {
     use super::*;
