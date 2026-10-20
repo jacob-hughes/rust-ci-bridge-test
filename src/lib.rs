@@ -6,6 +6,14 @@ pub fn sub(left: u64, right: u64) -> u64 {
     return left - right;
 }
 
+struct Hello(usize);
+
+impl Drop for Hello {
+    fn drop(&mut self) {
+        panic!("This is a test");
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
